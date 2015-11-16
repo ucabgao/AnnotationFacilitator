@@ -1,0 +1,23 @@
+{
+  "name": "weather",
+  "main": ["weather.js"],
+  "ignore": [
+    ".jshintrc",
+    "test",
+    "src",
+    "bower.json",
+    ".gitignore",
+    "CONTRIBUTING.md",
+    "Gruntfile.js",
+    "package.json",
+    "weather.jquery.json"
+  ],
+  "version": "0.2.3",
+  "dependencies": {
+    "jquery": ">= 1.8.0"
+  },
+  "devDependencies": {
+    "qunit": "~1.11.0",
+    "jquery": ">= 1.8.0"
+  }
+}

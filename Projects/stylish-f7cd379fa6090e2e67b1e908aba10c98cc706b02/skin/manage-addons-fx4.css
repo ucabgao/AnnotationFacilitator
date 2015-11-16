@@ -1,0 +1,55 @@
+#category-userstyles > .category-icon, #category-userstyle > .category-icon {
+	list-style-image: url("chrome://stylish/skin/32.png");
+}
+richlistitem[type="userstyle"]:not([pending]) {
+	-moz-binding: url("chrome://stylish/content/addon.xbl#addon-item");
+}
+richlistitem[type="userstyle"] .control-container {
+	-moz-binding: url("chrome://stylish/content/addon.xbl#addon-buttons");
+}
+richlistitem[type="userstyle"] [anonid="date-updated"] {
+	display: none;
+}
+#menuitem_userstyle_edit {
+	display: none;
+}
+#addonitem-popup[addontype="userstyle"] #menuitem_userstyle_edit {
+	display: -moz-popup;
+}
+#userstyle-footer {
+	display: none;
+	border-top: 1px solid threedshadow;
+}
+#list-view[type="userstyle"] #addon-list ~ #userstyle-footer {
+	display: -moz-box;
+}
+#no-styles-note {
+	padding-left: 1em;
+	display: none;
+}
+#no-styles-write-new {
+	display: none;
+}
+#list-view[type="userstyle"] #no-styles-note, #list-view[type="userstyle"] #no-styles-write-new {
+	display: -moz-box;
+}
+#userstyle-sorting {
+	display: none;
+}
+#list-view[type="userstyle"] #addon-list-empty[hidden] ~ #userstyle-sorting {
+	display: -moz-box;
+}
+#list-view[type="userstyle"] .alert {
+	display: none;
+}
+#list-view[type="userstyle"] #addon-list-empty:not([hidden]) ~ #userstyle-footer {
+	display: none;
+}
+/* Override add-ons manager's "disabled is display: none" */
+#install-from-url, #no-styles-install-from-url {
+	display: -moz-box;
+}
+/* Override Gnome "no images in buttons" */
+#install-from-url:not([image=""]) .button-icon, #no-styles-install-from-url:not([image=""]) .button-icon {
+	display: -moz-box;
+}
