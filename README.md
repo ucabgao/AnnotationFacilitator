@@ -8,8 +8,18 @@ To install this GUI, please issue:
 git clone https://github.com/ucabgao/AnnotationFacilitator.git
 ```
 
+## Projects download
+Currently, we have two datasets: 5 bugs in the annotation exercise and 20 bugs in the training set for inter-rater agreement. To download the two datasets, issue:
+```
+git clone https://github.com/ucabgao/AnnotationExercise.git
+```
+```
+git clone https://github.com/ucabgao/IRATraining.git
+```
+The GUI will look into only a directory named **projects** under the directory where AnnotationFacilitator.jar resides. So please manually create the **projects** folder, and move the two datasets into it.
+
 ## Configuration
-Before using this GUI, we need to first customise it in `config.xml` in the root directory. The configuration includes your name, e.g., **zheng**, which is used to distinguish different branches, your GitHub's username and password which are used to push your changes so that other authors can see them, and the absolute path of your preferered editor, **mvim** in my case.
+Before using this GUI, we need to first customise it in `config.xml` in the root directory. The configuration includes your name, e.g., **zheng**, which is used to distinguish different branches, your GitHub's username and password which are used to push your changes so that other authors can see them, and the absolute path of your preferered editor, **mvim** in my case. The field projectRepo indicates the directory which has the projects we are going to investigate. For the five exercise projects, projectRepo would be AnnotationExercise by default, and for the training set for inter-rater agreement, projectRepo would be IRATraining by default.
 
 ## Using the GUI 
 To run the GUI, we type
@@ -33,7 +43,7 @@ editor window will pop out.
 We can use this GUI to record some annotation statistics, such as annotation time, whether a bug is detectable by the two 
 static type checkers, and reasons why a bug is deemed undetectable. The button `taxonomy` renders a table showing different 
 reasons of undetectablility. Some of these reasons are from first principle and others are learnt during the preliminary 
-study. The GUI automatically stores the results in a file `results.csv` in the `projects` folder.
+study. The GUI automatically stores the results in a csv file in the root folder of the project that is being inspected. The csv file has the following naming convention: `authorName-bugID-typeChecker`.csv.
 
 ## Branch Naming Convention
 After the annotation, the authors can commit their changes by clicking the button `commit`. It automatically creates a 
