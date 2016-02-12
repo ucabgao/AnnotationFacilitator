@@ -5,7 +5,7 @@ A GUI application, **AnnotationFacilitator.jar**, which facilitates the annotati
 ## GUI Installation
 To install this GUI, please issue:
 ```
-git clone install.rb
+git clone https://github.com/ucabgao/AnnotationFacilitator.git
 ```
 
 ## Configuration
