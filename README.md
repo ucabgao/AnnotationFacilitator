@@ -1,20 +1,17 @@
-# Annotation Exercise
-This repo contains five bugs served as an exercise of type annotations for co-authors before actually conducting the 
-experiment.
 
-## GUI Guidance
+# GUI Guidance
 A GUI application, **AnnotationFacilitator.jar**, which facilitates the annotation process is provided.
 
-### GUI Installation
+## GUI Installation
 To install this GUI, please download and run this scriptm **install.rb** by.
 ```
 ruby install.rb
 ```
 
-### Configuration
+## Configuration
 Before using this GUI, we need to first customise it in `config.xml` in the root directory. The configuration includes your name, e.g., **zheng**, which is used to distinguish different branches, your GitHub's username and password which are used to push your changes so that other authors can see them, and the absolute path of your preferered editor, **mvim** in my case.
 
-### Using the GUI 
+## Using the GUI 
 To run the GUI, we type
 ```
 java -jar AnnotationFacilitator.jar
@@ -38,14 +35,14 @@ static type checkers, and reasons why a bug is deemed undetectable. The button `
 reasons of undetectablility. Some of these reasons are from first principle and others are learnt during the preliminary 
 study. The GUI automatically stores the results in a file `results.csv` in the `projects` folder.
 
-### Branch Naming Convention
+## Branch Naming Convention
 After the annotation, the authors can commit their changes by clicking the button `commit`. It automatically creates a 
 branch named `authorName-repo-bugID-typeChecker`, adds and commits all the changes, and pushes to the repo on GitHub.
 
-## Annotation Tutorial
+# Annotation Tutorial
 I once gave a brief tutorial on how to add annotations, which consists of four examples.
 
-### First -- dummy example
+## First -- dummy example
 Suppose we want to statically type check a function in JavaScript.
 ```JavaScript
 // Add function in JavaScript
@@ -106,7 +103,7 @@ addNumberAnnotated.js:7
 Found 1 error
 ```
 
-### Second -- cabaljs
+## Second -- cabaljs
 **cabaljs** is a real-world project that has a field bug, whose error description is `Uncaught TypeError: Object #<Object> has no method 'forEach'`. According to GitHub's issue tracking system, we notice this bug report was closed in commit `fe59fec108ccda196692e21c2092d2cc6f01d600` which we assume to be a correct fix. We go to the webpage that shows the difference between the fix and its buggy parent. The changes that the authors made are
 ```JavaScript
 -  data.push(rowRenderer(properties, row, mappings));
@@ -128,7 +125,7 @@ By type checking using TypeScript, an error is thrown
 cabal.ts(21,17): error TS2339: Property 'forEach' does not exist on type 'Object'.
 ```
 
-### Third -- a project that uses jQuery
+## Third -- a project that uses jQuery
 A majority of real world JavaScript projects use external libraries.  When it comes to external references, the annotation becomes chanllenging. Suppose we have a simple project that uses jQuery.
 ```JavaScript
 $(document).ready(function () {
@@ -167,7 +164,7 @@ var $ = require('JQuery').$;
 Detailed instruction can be found at http://flowtype.org/docs/declarations.html#_ .
 
 
-### Forth -- handsontable
+## Forth -- handsontable
 Sometimes **DefinitelyTyped** fails to provide a declartion file for some libaries. In these difficult cases, we have to create our own declaration files. **handsontable** is a large project that has a type error whose bug report is 
 ```
 TypeError: Argument 1 of Document.elementFromPoint is not a finite floating-point value.
