@@ -3,9 +3,9 @@
 A GUI application, **AnnotationFacilitator.jar**, which facilitates the annotation process is provided.
 
 ## GUI Installation
-To install this GUI, please download and run this scriptm **install.rb** by.
+To install this GUI, please issue:
 ```
-ruby install.rb
+git clone install.rb
 ```
 
 ## Configuration
