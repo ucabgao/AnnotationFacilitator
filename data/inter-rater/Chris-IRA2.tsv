@@ -1,0 +1,46 @@
+Project	Issue	Commit	TypeChecker	Detectable	Comment	AnnotationTime
+2gis/slot	220	82cf940a8a3724d84f72b8988f6c6ba45634353f	TypeScript	Undetectable	EIS: just a fix to a test that updates what files are globbed	66
+CodeFellows-JSJAKZ/along-the-way	47	6a1ac99bc0d2883090e3fe19056e1b7d88cb208c	TypeScript	Undetectable	EIS: this just checks to see if a window exists before creating a new one.	61
+DDMAL/salzinnes-original	46	daa3c87a6e73a4f1f7be76b787c33efe2eb07034	TypeScript	Undetectable	EIS: fixing dimensions	60
+DeuxHuitHuit/jQuery-one-liner	1	b95235af155e9727509a81e80f00561ff48310eb	TypeScript	Undetectable	EIS: updates the width of a jquery object.	27
+ElteHupkes/ember-query-params	6	d40f7dcdea50fe3df2f534cfe23a7d42a56084b5	TypeScript	Undetectable	EIS: this just makes a function return a value where it didn't before and now the return value of the function call is examined	129
+FinchPowers/chrome-github-navigator-extension	5	fac28ac67a8d52a408d50602c32223ea6bb11987	TypeScript	Undetectable	EIS	42
+Thanood/aurelia-mdl-skeleton-navigation	1	4d68db531556e335ad866b2d7d7ff3b5618213b6	Flow	Undetectable	It doesn't look like flow supports decorators	49
+Thanood/aurelia-mdl-skeleton-navigation	1	4d68db531556e335ad866b2d7d7ff3b5618213b6	TypeScript	Undetectable	typescript doesn't appear to handle decorators well.	386
+airmanopus/weatherCheck	125	8044ba885a52237fcad6be18452aa8f560924fab	TypeScript	Undetectable	string error	10
+alonsovb/Audits	14	005185f0a2620bb5fd0c9b968b80dc1d2074f7aa	Flow	Undetectable	EIS	106
+alonsovb/Audits	14	005185f0a2620bb5fd0c9b968b80dc1d2074f7aa	TypeScript	Undetectable	EIS	19
+arrowrowe/es6-playground	2	bbd97ca21e9ad0075a92b6d04ab3250a4f1535d4	Flow	Undetectable	string error	21
+aturley/gistblog	11	2ec68b7756bb0a8b91aaa9693e05ead23f8afc85	Flow	Undetectable	string errors	30
+braintree/card-validator	20	b20ac92d7bf4234b4692d275f053a6622e8cdfe4	TypeScript	Undetectable	EIS: fixes a bug with checking validity of card numbers.  Can't get it to detect.	180
+caolan/pithy	2	8e8b63581f243bb6a7c4b8325eb59fe42afa9e47	Flow	Undetectable	syntax errors	43
+cerebral/cerebral-view-react	36	15151fb9752842535daa67634e80496fe7d9ecc7	TypeScript	Undetectable	refactoring: code cleanup	114
+cheeaun/node-hnapi	15	061599fa71fe5b92478e0e48cacea8a7e9ce1a57	TypeScript	Undetectable	EIS: this is just a bug on how data is scraped, but there is no type error.	149
+dfahlander/Dexie.js	173	c44ec6af407ba26fdd795db10a922fd125c0d55a	Flow	Undetectable	Other: I don't actually see how this change is changing things.	67
+dfahlander/Dexie.js	173	c44ec6af407ba26fdd795db10a922fd125c0d55a	TypeScript	Undetectable	Other: I don't understand what this change actually does unless there are different things in scope when the function is called.	622
+digital-dreamer/twister-proxy	4	4965413ce5661aae8566769eec6ab7390bd99e1a	TypeScript	Undetectable	EIS: updating headers	30
+duenni/beermap	16	88d5bc0f442db53f03b75e5ccd14bd7d15d4e571	Flow	Undetectable	EIS: this is not detectable, just a plain programming but.  I don't even see how it could possible have worked before.	146
+emberjs/data	3944	e1007db415041ef6a9831b731c9f458d11d2ae4f	TypeScript	Undetectable	EIS: this adds an empty mapping file that is expected by bower.  not detectable.	270
+flams/synchronous-fsm	1	2d4c0e489d98711730c49d6b2b0b6d3196120c98	Flow	Undetectable	EIS: there is a decent amount of dynamic type checking going on, but expect is a function which can take literally anything.	202
+frankko/UtilityBelt	4	f61e21df92a59cb470d0e8723a9ee2a1ee1b638e	Flow	Unknown	OK, I can't figure out the [obj className] syntax.  I've never seen two identifiers in brackets with no comma or operator between them so I don't know what's going on here.	299
+gomita/verticaltoolbar	31	3c608cdbda50bec73443b1e22b15572aae363fa4	TypeScript	Undetectable	EIS	29
+jonatkins/ingress-intel-total-conversion	529	c68021609bb8bc3c65788477fd9698fff9d0355f	Flow	Detectable		167
+jonatkins/ingress-intel-total-conversion	529	c68021609bb8bc3c65788477fd9698fff9d0355f	TypeScript	Detectable	typescript finds that isSameResonator is not defined.	158
+justojs/justo-result	3	ea07cfe376eafae6c46592a7f664cca045ba0558	TypeScript	Undetectable	EIS: adding state to a bunch of functions and updating call sites	132
+mafintosh/hyperdrive	2	84f36ef71d73a7a3eb293f46aadd25cb9dee8480	Flow	Undetectable	Other: this looks like it does some input checking to see if it's null or undefined.  I can't tell the relationship between the bug report and the change, however.	429
+matthewp/keys	1	1ec66bbed7f1dec78718e776c73e3e113023d127	TypeScript	Undetectable	Others: this is a tough one as it is a defensive move due to not exactly knowing what the type of the object is.  But I don't thinkthis is detectable.	385
+mozilla/browserid-crypto	16	c048ad8c0969ddb6649332567684c3ad1a8dcce2	Flow	Undetectable	Other: the const declaration doesn't cause an error with either typechecker.  There is no reassignment to jwcrypto so this looks like an IE bug and not typecatchable.	257
+onedr0p/telegram-sonarr-bot	31	2d5f8e6d9b2e79815d11ad3d1e5f7bef17fbde84	TypeScript	Undetectable	EIS	51
+protometa/convert-metric	1	dfb41bbfe11195ff6c249a7b4b939a1c8b30306a	Flow	Undetectable	This adds some type checking, but the original code was not type incorrect.	165
+r8k/proxy	3	8fadd582810d6fa79b4070fcf3c67673d4a10519	Flow	Undetectable	EIS	25
+rgrp/chrome-csv-viewer	2	7e07054e7e742f97bafceb195816d477af293ba3	Flow	Undetectable	EIS: just added updating the browser history.	29
+richwidgets/richwidgets	81	7208d477fed63bf133f969e2b2aa4c9d51e606c7	Flow	Undetectable	EIS: this fixes issues on lists being sortable.  not detectable	112
+robwhitaker/Compiler	3	2546af90a9b3d2c5592a2ada06841489498ce0fa	TypeScript	Undetectable	EIS: fixed a bug with left over state 	32
+sandeepmistry/node-core-bluetooth	1	71485dbe825b8027ebb278fa69249e146ed68746	Flow	Detectable	I don't understand how both flow and TypeScript typecheck this.  	488
+sandeepmistry/node-core-bluetooth	1	71485dbe825b8027ebb278fa69249e146ed68746	TypeScript	Detectable	added type annotation of string to mapDelegate	95
+seedstack/w20	20	044ac4f918618e76a8603d2710dbb7eafb22d9a3	Flow	Undetectable	string errors: also some refactoring	63
+sindresorhus/atom-autoprefixer	11	7377ec5c2f17abdee00def34b8c62e5552df666a	Flow	Undetectable	EIS	0
+sindresorhus/os-locale	1	34c02ef169549743a7813421b5681161eeb0aaad	Flow	Undetectable	regex fix	44
+vmi/dropbox-js-for-chrome-extension	1	6d057d922353e21ba5fc3c6b3bb534a65499dd52	Flow	Unknown	This is a big change.  I didn't see anything that looked easy to detect with a static type system.	698
+wooorm/parse-latin	5	01a117ec977b83731bdd228f97a82436705316b7	Flow	Undetectable	string errors	12
+yasp-dota/yasp	862	2142d9434603e9c16e91ce184523c2884ced39a4	Flow	Undetectable	EIS: this updates the minimym value for e.key and changes some formatting.	81

@@ -1,0 +1,55 @@
+Project	Issue	Commit	TypeChecker	Detectable	Comment	AnnotationTime
+51114u9/osm-dark-theme	1	46e7602002e365d5a1e11e5ed98ce783700b7e72	Flow	Undetectable	string error	29
+CounterpartyXCP/counterwallet	705	08e879102694ab071495aa6a89ac92e61e72ae00	TypeScript	Undetectable	EIS	108
+DevExpress/testcafe	133	88b3f610e2bf4b954c456fa39f65b9bc146906ba	Flow	Undetectable	Others: just updating a test	197
+Gozala/eased	1	a45190c68ca851a1266747c099e2cc886028eec5	Flow	Undetectable	mistake by using ^ as math.pow, but it still typechecks since both return a number	25
+Gozala/narwhal-xulrunner	5	b9734c1884ce5f7df8bcc3ea7b2cc15be1a8239a	Flow	Detectable		298
+Gozala/narwhal-xulrunner	5	b9734c1884ce5f7df8bcc3ea7b2cc15be1a8239a	TypeScript	Detectable		34
+amber-smalltalk/helios	66	280e38493882046fd155ded41894d3460c6b8f97	Flow	Undetectable	this is transpiled from smalltalk files.  I have to assume that the transpiler outputs valid code (though smalltalk is dynamically typed).	278
+amber-smalltalk/helios	66	280e38493882046fd155ded41894d3460c6b8f97	TypeScript	Undetectable	spec error.  this is transpiled from smalltalk files.  I have to assume that the transpiler outputs valid code (though smalltalk is dynamically typed).	56
+beefsack/node-hound	3	c6f13b31808b5f0be2dc63946c7fd25841a387e4	Flow	Detectable	this was not caught in Flow because apparently flow includes the node.js api and the version flow uses doesn't fail the type check.  But if it had the new version, it would catch the error.	0
+beefsack/node-hound	3	c6f13b31808b5f0be2dc63946c7fd25841a387e4	TypeScript	Detectable	this is debatable, but assuming the library was typed, the fix would have been found by typescript since the type of path no longer has existsSync.  the checked in .ts file exhibits the failure.	335
+bigbam505/finalbuilder-client	7	2150880c0ac640c3d6378f3f79558f76c2939ff8	Flow	Undetectable	missing functionality.  Code was updated to allow http options to be passed to the SOAP calls.  Not catchable by type checker since the SOAP apis allow for options as optional arguments.	1049
+bigbam505/finalbuilder-client	7	2150880c0ac640c3d6378f3f79558f76c2939ff8	TypeScript	Undetectable	missing functionality.  Code was updated to allow http options to be passed to the SOAP calls.  Not catchable by type checker since the SOAP apis allow for options as optional arguments.	13
+boundlessgeo/GeoExplorer	15	0675c0f759e049ee34f9fce6571731dddeda797e	TypeScript	Undetectable	Syntax error	145
+buildo/react-components	241	618ec12cc2adc18a1011e11b7adaa663d6724c18	Flow	Undetectable	others: refactoring identifier name	144
+bustlelabs/ember-restless	15	0349460b3a9b877f46f440acd93c573d4ff4edcb	TypeScript	Undetectable	EIS	63
+capaj/systemjs-hot-reloader	15	37ed4bdb083cba297ed08a5b675f18b437ebf0c6	Flow	Unknown	This was too complicated for me to follow.  I simply can't tell.	213
+courtc/jikp	2	5fb2052b6437a43224a44041ccfec7782a8d2eb3	Flow	Undetectable	Spec error.	0
+courtc/jikp	2	5fb2052b6437a43224a44041ccfec7782a8d2eb3	TypeScript	Undetectable	Spec error.	0
+deplicator/xkcdTime_atyourownpace	47	b7698ef7b6f040040534f342b5c40aaea82a84ef	Flow	Undetectable	missing predicate	0
+deplicator/xkcdTime_atyourownpace	47	b7698ef7b6f040040534f342b5c40aaea82a84ef	TypeScript	Undetectable	missing predicate	0
+djaodjin/djaodjin-annotate	32	671c6bc597b9cd965e1597756d392bc3cb2941f8	Flow	Undetectable	other: mostly fixing indentation.  Also added a method call (EIS)	65
+englercj/lumber	3	7d395559eaadff5599789b51309b9b8d433c0c6e	Flow	Undetectable	Missing branches	0
+englercj/lumber	3	7d395559eaadff5599789b51309b9b8d433c0c6e	TypeScript	Undetectable	Missing branches	7
+eprochasson/meteor-bootstrap-themes	2	0403058f2354c913d22b68f12db3c7bb7724c28d	TypeScript	Undetectable	other: simply changes the dependency on bootstrap.  This is kind of like a refactoring.	113
+es-analysis/plato	6	8c2b68ebc170938d4115148f71846ed6247409ed	Flow	Undetectable	Missing predicate	108
+hillar/pigsty-moloch-plugin	3	4a67b3125ea53faa135a09eadd6f16bec310ad4c	Flow	Undetectable	EIS	26
+istvan-ujjmeszaros/bootstrap-touchspin	5	1feb12270a53444672f6263c142989ff1fbf9cb3	Flow	Undetectable	missing predicate	0
+istvan-ujjmeszaros/bootstrap-touchspin	5	1feb12270a53444672f6263c142989ff1fbf9cb3	TypeScript	Unanalysed	missing predicate	0
+jerel/ember-cli-clock	2	276e47b68262b0430e329f46063fa91fb633c5aa	Flow	Detectable		573
+jerel/ember-cli-clock	2	276e47b68262b0430e329f46063fa91fb633c5aa	TypeScript	Detectable		0
+jfredrickson/minesweeper	1	2649c98e2f3c475906ec8a8eeeb6061076e830d5	Flow	Undetectable	EIS	44
+journalisttoolbox/journalisttoolbox-front-end	25	69984a4af5ea4203b5ca7961e279d704afa97ac9	Flow	Undetectable	refactoring: this just accomplishes about the same thing without the temp variables	99
+jshttp/cookie	21	faf389539824d5c973e4d9604ce89089941d820b	Flow	Undetectable	fix regex	4
+jshttp/cookie	21	faf389539824d5c973e4d9604ce89089941d820b	TypeScript	Undetectable	fix regex	2
+jsoverson/JavaScript-Particle-System	1	4768bff8838c086ecaa1513520f4b9a8c5bf9d3a	Flow	Undetectable	others.  this looks like a performance fix.  display.context.globalCompositionOperator is a valid method so it wouldn't be caught by a type checker.	5
+jsoverson/JavaScript-Particle-System	1	4768bff8838c086ecaa1513520f4b9a8c5bf9d3a	TypeScript	Undetectable	others.  this looks like a performance fix.  display.context.globalCompositionOperator is a valid method so it wouldn't be caught by a type checker.	4
+mnutt/hummingbird	4	10f3a0c1c7da28c3c695ec4dd74c807aee2a8bb3	Flow	Detectable	found the type error	0
+mnutt/hummingbird	4	10f3a0c1c7da28c3c695ec4dd74c807aee2a8bb3	TypeScript	Detectable		0
+moelders/simple-async	10	502b2b65e00845d46fe1fb2ee5346f8772aea919	Flow	Undetectable	EIS: this simply creates the publish folder if it doesn't exist before writing to is.	42
+moshen/node-googlemaps	60	41ea92c3310acf17fa6855a9aeb631a4e8ebaf0b	Flow	Undetectable	EIS: use callback to indicate an error if it is provided.	35
+nationalparkservice/places-api	9	d8afcd3d18143f1da000912e945305f0747409bd	Flow	Undetectable	Other: this is just updating the function return types.  I can't see that it was a type error before.	379
+nazomikan/require-without-cache	1	25d0e58d4d8f53add91f6334f1ad17117d8aadd5	Flow	Detectable	I had to guess at the type of cache.  I chose array of numbers and that leads to a type error.	234
+nazomikan/require-without-cache	1	25d0e58d4d8f53add91f6334f1ad17117d8aadd5	TypeScript	Unknown	I timed out on the declaration, though this seems exactly what could be caught with a type declaration.	1004
+ng2/auth	8	2783b21e9b7abf15ee7bf7562be64c96bfcc56b2	Flow	Unknown	It seems like this should be catchable by a type error, but I can't make flow typecheck this as an error.  Is false allowed when an Object is expected?	402
+ng2/auth	8	2783b21e9b7abf15ee7bf7562be64c96bfcc56b2	TypeScript	Unknown	I can't figure out how to make typescript not accept false.  Seems like search(foo: Object): any; should do it, but it doesn't.	1398
+opsmezzo/quill-template	13	3342f999fcf48fece0b45bddd0e63d0cfe18446e	TypeScript	Undetectable	EIS: this just updates a method call adding optional parameters	81
+p-j/meteor-gravatar	3	d5b70d91f92751e3b16b441c9631906196b2d465	TypeScript	Undetectable	Others: updating package meta-data	1018
+perliedman/lrm-mapbox	1	c7e99f023411fe379a152427d00d3b24b805ba73	Flow	Undetectable	string error	14
+pretenderjs/pretender	94	7df020470e4d0b31855b96e14eea49ab37b97f79	Flow	Undetectable	string errors	368
+royriojas/persistify	2	5ff8fdf6dded64e8ee1fa2909448d1c6c35b1bda	Flow	Undetectable	EIS: improve error logging and actually exit in case of an error	165
+smo-key/trello2latex	21	cdcf777465874a7c68db5baf8e86d4fb2380c4a8	Flow	Undetectable	EIS	308
+tildeio/rsvp.js	51	161edc3f44015564689dc88c76a8efa0638b6284	Flow	Undetectable	wrong predicate: this checks the length of an array each time through the loop rather than caching it	155
+ui-alchemy/alchemy	4	b3b6ae1fc840e913b60c3b857575e04d10fcb8a9	TypeScript	Undetectable	string error:	1493
+villadora/express-bunyan-logger	13	8d3f6029add113da5003a268e87a1cab05fe03b8	Flow	Undetectable	EIS	229

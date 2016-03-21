@@ -1,0 +1,50 @@
+Project	Issue	Commit	TypeChecker	Detectable	Comment	AnnotationTime
+2gis/slot	220	82cf940a8a3724d84f72b8988f6c6ba45634353f	TypeScript	Undetectable	Parsing error. Wrongly include unnecessary js files for testing.	66
+CodeFellows-JSJAKZ/along-the-way	47	6a1ac99bc0d2883090e3fe19056e1b7d88cb208c	Flow	Undetectable	Missing a predicate. Wrongly create multiple unnecessary infowindows due to a missing check on whether infowindow already exists. 	32
+DDMAL/salzinnes-original	46	daa3c87a6e73a4f1f7be76b787c33efe2eb07034	TypeScript	Undetectable	UI error. Forgot to resize the inner element when resizing the page.	34
+DeuxHuitHuit/jQuery-one-liner	1	b95235af155e9727509a81e80f00561ff48310eb	TypeScript	Undetectable	Range error. These two type systems need more fine-grained type annotations.	14
+ElteHupkes/ember-query-params	6	d40f7dcdea50fe3df2f534cfe23a7d42a56084b5	Flow	Undetectable	API change. An upgrade of RC7 broke the functionality of updating urls.	111
+FinchPowers/chrome-github-navigator-extension	5	fac28ac67a8d52a408d50602c32223ea6bb11987	Flow	Undetectable	Missing branches / Wrong predicates. Wrongly implement the functionality of icon toggling.	73
+Thanood/aurelia-mdl-skeleton-navigation	1	4d68db531556e335ad866b2d7d7ff3b5618213b6	Flow	Detectable	Add annotation to indicate that btn can be null/undefined.	233
+Thanood/aurelia-mdl-skeleton-navigation	1	4d68db531556e335ad866b2d7d7ff3b5618213b6	TypeScript	Undetectable	Noull/undefined handling. TypeScript does not support non-nullable type annotations.	638
+airmanopus/weatherCheck	125	8044ba885a52237fcad6be18452aa8f560924fab	TypeScript	Undetectable	String errors. Wrong string value for a property.	37
+alonsovb/Audits	14	005185f0a2620bb5fd0c9b968b80dc1d2074f7aa	TypeScript	Undetectable	EIS. Forgot to save the comment when clicking complete.	95
+arrowrowe/es6-playground	2	bbd97ca21e9ad0075a92b6d04ab3250a4f1535d4	Flow	Detectable	Flow understands require and is able to detect the bug that some module does not exist because of an error in the path.	31
+arrowrowe/es6-playground	2	bbd97ca21e9ad0075a92b6d04ab3250a4f1535d4	TypeScript	Undetectable	String errors. TypeScript does not support require mechanism.	122
+aturley/gistblog	11	2ec68b7756bb0a8b91aaa9693e05ead23f8afc85	TypeScript	Undetectable	String errors. Failed to construct a correct hyperlink element to the single-post display.	14
+braintree/card-validator	20	b20ac92d7bf4234b4692d275f053a6622e8cdfe4	TypeScript	Undetectable	EIS. Confusion between 'valid' and 'potentially valid'.	107
+caolan/pithy	2	8e8b63581f243bb6a7c4b8325eb59fe42afa9e47	Flow	Undetectable	EIS. Flow cannot automatically find that class is a reserved keyword.	73
+caolan/pithy	2	8e8b63581f243bb6a7c4b8325eb59fe42afa9e47	TypeScript	Undetectable	EIS. At a first glance, TypeScript simply reports an error on this line. However, the error TypeScript reports is irrelevant with the bug that class is reserved keyword. TypeScript's interpretation of {} is different fromthat of JavaScript	142
+cerebral/cerebral-view-react	36	15151fb9752842535daa67634e80496fe7d9ecc7	Flow	Undetectable	EIS. These programs are not updated with changes in other programs. Specifically, the arity of function decorator needs to be changed. Without a call of decorator, this bug is undetectable.  	142
+cheeaun/node-hnapi	15	061599fa71fe5b92478e0e48cacea8a7e9ce1a57	Flow	Undetectable	EIS. Wrong initialisation.	132
+dfahlander/Dexie.js	173	c44ec6af407ba26fdd795db10a922fd125c0d55a	TypeScript	Undetectable	Synchronization error. The fix exceeds my JS knowledge, but this bug is not related to types.	70
+digital-dreamer/twister-proxy	4	4965413ce5661aae8566769eec6ab7390bd99e1a	TypeScript	Undetectable	EIS. Missing an authenticatioin header in messages in HTML.	18
+duenni/beermap	16	88d5bc0f442db53f03b75e5ccd14bd7d15d4e571	Flow	Undetectable	EIS. Confusion between i and j, two loop indexes.	101
+emberjs/data	3944	e1007db415041ef6a9831b731c9f458d11d2ae4f	Flow	Undetectable	EIS. Forgot to create a file that a third party library requires.	47
+flams/synchronous-fsm	1	2d4c0e489d98711730c49d6b2b0b6d3196120c98	Flow	Detectable	I could not find any documents on the function loop(). However, based on the bug report, I know that the first parameter cannot be undefined. Therefore, I construct my own interface declaration and detects this bug.	763
+flams/synchronous-fsm	1	2d4c0e489d98711730c49d6b2b0b6d3196120c98	TypeScript	Undetectable	Null handling. TypeScript does not support non-nullable type annotation.	42
+frankko/UtilityBelt	4	f61e21df92a59cb470d0e8723a9ee2a1ee1b638e	Flow	Undetectable	Missing a branch. Forgot to handle a case where the plugin should work for creating guides	37
+gomita/verticaltoolbar	31	3c608cdbda50bec73443b1e22b15572aae363fa4	TypeScript	Undetectable	EIS. Forgot to properly start and finish the customisation of the bookmark toolbar.	27
+jonatkins/ingress-intel-total-conversion	529	c68021609bb8bc3c65788477fd9698fff9d0355f	Flow	Detectable	Able to detect that isSameResonator has not been declared yet.	78
+jonatkins/ingress-intel-total-conversion	529	c68021609bb8bc3c65788477fd9698fff9d0355f	TypeScript	Detectable	Need to comment two strange lines.	536
+justojs/justo-result	3	ea07cfe376eafae6c46592a7f664cca045ba0558	TypeScript	Undetectable	EIS. Missing a functionality of setting and checking the state variable.	76
+mafintosh/hyperdrive	2	84f36ef71d73a7a3eb293f46aadd25cb9dee8480	Flow	Detectable	Could not afford to fully annotate the library for messages, Entry, decode. From the bug reort, construct my own annotation that detects it.	634
+mafintosh/hyperdrive	2	84f36ef71d73a7a3eb293f46aadd25cb9dee8480	TypeScript	Undetectable	Null/undefined handling. TypeScript does not support non-nullable type annotations.	34
+matthewp/keys	1	1ec66bbed7f1dec78718e776c73e3e113023d127	Flow	Undetectable	EIS. According to https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty , sometimes it is not safe to use obj.hasOwnProperty as this function may be overridden. Using Object.prototype.hasOwnProperty is the best practise.	229
+mozilla/browserid-crypto	16	c048ad8c0969ddb6649332567684c3ad1a8dcce2	Flow	Undetectable	Flow is not aware of this bug that IE does not allow const to be used here.	34
+mozilla/browserid-crypto	16	c048ad8c0969ddb6649332567684c3ad1a8dcce2	TypeScript	Undetectable	EIS. IE does not allow a const to be used here.	70
+onedr0p/telegram-sonarr-bot	31	2d5f8e6d9b2e79815d11ad3d1e5f7bef17fbde84	TypeScript	Undetectable	Synchronisation error. Messages are sent in a wrong order.	43
+protometa/convert-metric	1	dfb41bbfe11195ff6c249a7b4b939a1c8b30306a	TypeScript	Undetectable	EIS. The method toPrecision() returns a string representing a number in fixed-point or exponential notation, whose format is not expected by the subsequent parsing. 	219
+r8k/proxy	3	8fadd582810d6fa79b4070fcf3c67673d4a10519	Flow	Undetectable	EIS. According to the bug report, the bug is a wrong computation.  But the fix also changes the check for the existence of some property. However, becaue the original code uses a try catch, it is safe.	80
+rgrp/chrome-csv-viewer	2	7e07054e7e742f97bafceb195816d477af293ba3	TypeScript	Undetectable	EIS. Forgot to update the URL which links to some file.	57
+richwidgets/richwidgets	81	7208d477fed63bf133f969e2b2aa4c9d51e606c7	TypeScript	Undetectable	Missing a predicate. Forgot to first check whether some predicate holds before destroying the selectable jQuery plugin. 	30
+robwhitaker/Compiler	3	2546af90a9b3d2c5592a2ada06841489498ce0fa	Flow	Undetectable	EIS. Forgot to reset the value of the variable compiledStr.	9
+sandeepmistry/node-core-bluetooth	1	71485dbe825b8027ebb278fa69249e146ed68746	Flow	Undetectable	EIS. Flow is able to infer that self has the type of window, but did not regard it as a type error.	338
+sandeepmistry/node-core-bluetooth	1	71485dbe825b8027ebb278fa69249e146ed68746	TypeScript	Detectable	In JavaScript, self refers to the global object, window. Here we annotate the mapDelegate to accept only string or number values. The call then throws a type error.	364
+seedstack/w20	20	044ac4f918618e76a8603d2710dbb7eafb22d9a3	TypeScript	Undetectable	UI error. Duplicate items in the UI.	94
+sindresorhus/atom-autoprefixer	11	7377ec5c2f17abdee00def34b8c62e5552df666a	Flow	Undetectable	EIS. Wrongly implement the handling of unsaved text.	124
+sindresorhus/os-locale	1	34c02ef169549743a7813421b5681161eeb0aaad	Flow	Unknown	Parsing error. TypeScript has builtin support for regular expressions: the type of regular expression literals is the global interface type 'RegExp'. But I could not find such a support for Flow. But I presume that Flow should have such support. 	375
+sindresorhus/os-locale	1	34c02ef169549743a7813421b5681161eeb0aaad	TypeScript	Undetectable	Null handling. TypeScript does not support a non-nullable type annotation.	66
+vmi/dropbox-js-for-chrome-extension	1	6d057d922353e21ba5fc3c6b3bb534a65499dd52	Flow	Undetectable	API change. In oauth-request.js, chrome.extension.onRequest is deprecated. If we have fully annotated libraries and environment, we might be able to detect this bug.	499
+wooorm/parse-latin	5	01a117ec977b83731bdd228f97a82436705316b7	TypeScript	Undetectable	String errors. 	20
+yasp-dota/yasp	862	2142d9434603e9c16e91ce184523c2884ced39a4	TypeScript	Undetectable	EIS. Wrong computation.	19

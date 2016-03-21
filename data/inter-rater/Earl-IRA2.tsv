@@ -1,0 +1,40 @@
+Project	Issue	Commit	TypeChecker	Detectable	Comment	AnnotationTime
+2gis/slot	220	82cf940a8a3724d84f72b8988f6c6ba45634353f	TypeScript	Undetectable	Regex/Parsing Error.	32
+CodeFellows-JSJAKZ/along-the-way	47	6a1ac99bc0d2883090e3fe19056e1b7d88cb208c	Flow	Undetectable	Other:  Not sure if this is a missing branch due to the semantics of || in JavaScript or an browser/API error.	51
+DDMAL/salzinnes-original	46	daa3c87a6e73a4f1f7be76b787c33efe2eb07034	TypeScript	Undetectable	UI Error.	47
+DeuxHuitHuit/jQuery-one-liner	1	b95235af155e9727509a81e80f00561ff48310eb	TypeScript	Undetectable	UI Error.	10
+ElteHupkes/ember-query-params	6	d40f7dcdea50fe3df2f534cfe23a7d42a56084b5	Flow	Undetectable	API Change; Missing Branch.	48
+FinchPowers/chrome-github-navigator-extension	5	fac28ac67a8d52a408d50602c32223ea6bb11987	Flow	Undetectable	Missing/Incomplete/Wrong Predicates.	14
+Thanood/aurelia-mdl-skeleton-navigation	1	4d68db531556e335ad866b2d7d7ff3b5618213b6	Flow	Unknown	The change is a workaround for suspected JavaScript type coercions.  It's not clear to me whether TypeScript or Flow could, with the proper annotations, detect these.  I had trouble getting flow to recognize the imports.  This should be a case study.	224
+airmanopus/weatherCheck	125	8044ba885a52237fcad6be18452aa8f560924fab	TypeScript	Undetectable	String Error.	9
+alonsovb/Audits	14	005185f0a2620bb5fd0c9b968b80dc1d2074f7aa	Flow	Undetectable	EIS.	25
+arrowrowe/es6-playground	2	bbd97ca21e9ad0075a92b6d04ab3250a4f1535d4	TypeScript	Undetectable	API Misuse:  configuration error;  library path incorrect.	33
+aturley/gistblog	11	2ec68b7756bb0a8b91aaa9693e05ead23f8afc85	Flow	Undetectable	UI Error.	29
+braintree/card-validator	20	b20ac92d7bf4234b4692d275f053a6622e8cdfe4	Flow	Undetectable	Missing Predicates.	87
+caolan/pithy	2	8e8b63581f243bb6a7c4b8325eb59fe42afa9e47	Flow	Undetectable	Other:  TypeScript detects this bug, but Flow does not.	71
+caolan/pithy	2	8e8b63581f243bb6a7c4b8325eb59fe42afa9e47	TypeScript	Detectable	pithy.ts(135,19): error TS2339: Property 'class' does not exist on type '{}'.	173
+cheeaun/node-hnapi	15	061599fa71fe5b92478e0e48cacea8a7e9ce1a57	Flow	Undetectable	EIS:  Base path incorrectly built.	39
+dfahlander/Dexie.js	173	c44ec6af407ba26fdd795db10a922fd125c0d55a	Flow	Undetectable	I do not understand this fix.  It seems like the fix is semantically equivalent to its parent.  I can only speculate that then treats its immediate callee differently than those functions called by its callee.	148
+digital-dreamer/twister-proxy	4	4965413ce5661aae8566769eec6ab7390bd99e1a	Flow	Undetectable	API Misuse:  triggered by the removal of auth related data that had been backed into the twister html.	40
+duenni/beermap	16	88d5bc0f442db53f03b75e5ccd14bd7d15d4e571	TypeScript	Undetectable	Predicate error.	20
+emberjs/data	3944	e1007db415041ef6a9831b731c9f458d11d2ae4f	Flow	Undetectable	Other:  work better with bower component manager.	58
+flams/synchronous-fsm	1	2d4c0e489d98711730c49d6b2b0b6d3196120c98	TypeScript	Undetectable	Missing Branches;  API misuse:  Contains type-checking test.	250
+frankko/UtilityBelt	4	f61e21df92a59cb470d0e8723a9ee2a1ee1b638e	Flow	Undetectable	Missing Branch.	32
+gomita/verticaltoolbar	31	3c608cdbda50bec73443b1e22b15572aae363fa4	TypeScript	Undetectable	UI Error.	57
+jonatkins/ingress-intel-total-conversion	529	c68021609bb8bc3c65788477fd9698fff9d0355f	TypeScript	Undetectable	Missing branches.	25
+mafintosh/hyperdrive	2	84f36ef71d73a7a3eb293f46aadd25cb9dee8480	Flow	Detectable	I was able to add annotations that allows Flow to detect the problematic null value.	301
+mafintosh/hyperdrive	2	84f36ef71d73a7a3eb293f46aadd25cb9dee8480	TypeScript	Unknown	This should be in the case study.  If TypeScript allowed specifying non-nullable, one could make messages.File.decode take a non-nullable parameter and that would cause type checking to fail on the problematic value.  Failing this, I don't see what to do within the assessment time bound.	232
+matthewp/keys	1	1ec66bbed7f1dec78718e776c73e3e113023d127	Flow	Undetectable	Other:  Misuse of language runtime API:  Object.prototype.hasOwnProperty is better than obj.hasOwnProperty.	52
+mozilla/browserid-crypto	16	c048ad8c0969ddb6649332567684c3ad1a8dcce2	TypeScript	Undetectable	Other: Cross-browswer compatibility.	32
+protometa/convert-metric	1	dfb41bbfe11195ff6c249a7b4b939a1c8b30306a	TypeScript	Undetectable	Missing Branches.  Burned some time seeing what errors TypeScript would detect.	125
+rgrp/chrome-csv-viewer	2	7e07054e7e742f97bafceb195816d477af293ba3	Flow	Undetectable	UI Error.	19
+richwidgets/richwidgets	81	7208d477fed63bf133f969e2b2aa4c9d51e606c7	Flow	Undetectable	Missing branch.  This is a case that might be solvable by rearchitecting the code under a type system to prevent even calling destroy on invalid operands, but that is out of the scope of this experiment because of the domain knowledge assessing it would require.  Perhaps this is a candidate for a case study.	91
+robwhitaker/Compiler	3	2546af90a9b3d2c5592a2ada06841489498ce0fa	TypeScript	Undetectable	UI Error.	19
+sandeepmistry/node-core-bluetooth	1	71485dbe825b8027ebb278fa69249e146ed68746	Flow	Unknown	This code define an anonymous function with the parameter $self, but incorrectly uses self in the body of the method, as the parameter to the call of mapDelegate.  Self is, as I understand it, a special identifier in JavaScript so it was probably defined.  It may be that the special self's type could be distinguished from $self's type and thus this bug is tc-detectable or maybe not. 	93
+seedstack/w20	20	044ac4f918618e76a8603d2710dbb7eafb22d9a3	Flow	Undetectable	UI Error.	26
+sindresorhus/atom-autoprefixer	11	7377ec5c2f17abdee00def34b8c62e5552df666a	TypeScript	Undetectable	EIS.	76
+sindresorhus/os-locale	1	34c02ef169549743a7813421b5681161eeb0aaad	Flow	Undetectable	Regex/Parsing:  See comment on the TypeScript version of this bug.	76
+sindresorhus/os-locale	1	34c02ef169549743a7813421b5681161eeb0aaad	TypeScript	Undetectable	Regex/Parsing:  This is one that we should deep dive.  It's one where a Regex aware type system could know that a regex could return null so that calling .exec on its result of a regex could dereference a null.  	307
+vmi/dropbox-js-for-chrome-extension	1	6d057d922353e21ba5fc3c6b3bb534a65499dd52	TypeScript	Undetectable	API Change.	146
+wooorm/parse-latin	5	01a117ec977b83731bdd228f97a82436705316b7	Flow	Undetectable	String Error	6
+yasp-dota/yasp	862	2142d9434603e9c16e91ce184523c2884ced39a4	TypeScript	Undetectable	UI Error:  Incorrect data on kill streaks reported.	65
