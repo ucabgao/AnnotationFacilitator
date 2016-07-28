@@ -136,7 +136,7 @@ cabal.ts(21,17): error TS2339: Property 'forEach' does not exist on type 'Object
 ```
 
 ## Third -- a project that uses jQuery
-A majority of real world JavaScript projects use external libraries.  When it comes to external references, the annotation becomes chanllenging. Suppose we have a simple project that uses jQuery.
+A majority of real world JavaScript projects use external libraries.  When it comes to external references, the annotation becomes challenging. Suppose we have a simple project that uses jQuery.
 ```JavaScript
 $(document).ready(function () {
     $("p").click(function () {
@@ -151,7 +151,7 @@ In TypeScript, we need to write a declaration file which properly annotates the 
 ```JavaScript
 /// <reference path="jquery/jquery.d.ts" />
 ```
-This comment specifies a relative path for the declaration file `./jquery/jquery.d.ts`. Detailed instruction can be found at http://www.typescriptlang.org/Handbook#modules . Mannually writing properly annotated files for each library we encounter in the experiment is time-consuming. Fortunately, there is a repository, **DefinitelyTyped** (https://github.com/DefinitelyTyped/DefinitelyTyped), which is dedicated to provide annotated declaration files for popluar JavaScript libraries. From this repo, we find the file `jquery.d.ts` and save it into directory `./jquery`.
+This comment specifies a relative path for the declaration file `./jquery/jquery.d.ts`. Detailed instruction can be found at http://www.typescriptlang.org/Handbook#modules . Manually writing properly annotated files for each library we encounter in the experiment is time-consuming. Fortunately, there is a repository, **DefinitelyTyped** (https://github.com/DefinitelyTyped/DefinitelyTyped), which is dedicated to provide annotated declaration files for popluar JavaScript libraries. From this repo, we find the file `jquery.d.ts` and save it into directory `./jquery`.
 
 In Flow, we need to modify the file `.flowconfig` in the root directory, which is automatically created by the command 
 ```
@@ -188,7 +188,7 @@ import {WalkontableCellCoords} from './3rdparty/walkontable/src/cell/coords.js';
 import {WalkontableSelection} from './3rdparty/walkontable/src/selection.js';
 import {Walkontable} from './3rdparty/walkontable/src/core.js';
 ```
-No interfaces for these customised libraries can be found on **DefinitelyTyped**, and mannually writing properly annotated declaration files are difficult. 
+No interfaces for these customised libraries can be found on **DefinitelyTyped**, and manually writing properly annotated declaration files are difficult. 
 
 To tackle this problem, we first read the bug report and realise that the bug is caused by the fact that variable `event` has no property `x` when used in FireFox. We then read the code and understand that `event` is actually of type `MouseEvent`. According to what is described at https://developer.mozilla.org/en/docs/Web/API/MouseEvent , we simply add a interface that has no implementation details to `src/tableView.js` but a delaration of all its properties
 ```TypeScript
